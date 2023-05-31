@@ -31,38 +31,35 @@ class HomeController extends Controller
         return view('home.about');
     }
     
-    public function services()
-    {
-        return view('home.services');
-    }
-    
-    public function products()
-    {
-        return view('home.products');
-    }
-
-    public function contact()
-    {
-        return view('home.contact');
-    }
     public function blog()
     {
         return view('home.blog');
     }
-    public function testimonials()
+    
+    public function faq()
     {
-        return view('home.testimonials');
+        return view('home.faq');
     }
-    public function detail()
+
+    public function food()
     {
-        return view('home.detail');
+        return view('home.food');
     }
-    public function feature()
+    public function gallary()
     {
-        return view('home.feature');
+        return view('home.gallary');
     }
-    public function team()
+    public function location()
     {
-        return view('home.team');
+        return view('home.location');
     }
+    public function menu()
+    {
+        return view('home.menu');
+    }
+    public function order()
+    {
+        return view('home.order');
+    }
+    
 }

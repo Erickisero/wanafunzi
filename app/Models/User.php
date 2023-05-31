@@ -8,8 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Models\animals;
-use App\Models\crops;
+use App\Models\orders;
 
 class User extends Authenticatable
 {
@@ -45,11 +44,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function animals(){
-        return $this->hasMany('animals'::class);
+    public function order(){
+        return $this->hasMany('orders'::class);
     }
 
-    public function crops(){
-        return $this->hasMany('crops'::class);
     }
-}

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Spartans Admin - Dashboard</title>
+  <title>Funke Admin - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="{{asset('admin_ui/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -27,13 +27,17 @@
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
+    <li class="nav-item active">
+        <a class="nav-link" href="{{route('home.index')}}">
+        <i class="fas fa-home"></i>
+          <span>HOME</span></a>
+      </li>
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin.index')}}">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-icon ">
+          <i class="fas fa-laugh"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Spartans Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Funke Admin </div>
       </a>
 
       <!-- Divider -->
@@ -54,13 +58,9 @@
         Interface
       </div>
 
-      <!-- Nav Item - Crop Collapse Menu -->
-
-      <x-admin-crop></x-admin-crop>
-
-      <!-- Nav Item - Animal Collapse Menu -->
+      <!-- Nav Item - order Collapse Menu -->
       
-      <x-admin-animal></x-admin-animal>
+      <x-admin-order></x-admin-order>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -70,7 +70,7 @@
         Addons
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item - Pages Collapse Menu 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
@@ -88,20 +88,13 @@
             <a class="collapse-item" href="blank.html">Blank Page</a>
           </div>
         </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('crop.create')}}">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Crops</span></a>
-      </li>
+      </li>-->
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="{{route('animal.create')}}">
+        <a class="nav-link" href="{{route('order.create')}}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Animals</span></a>
+          <span>Order</span></a>
       </li>
 
       <!-- Divider -->
@@ -131,6 +124,7 @@
 
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            
             <div class="input-group">
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
@@ -317,7 +311,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Farmers project by Spartans @2023</span>
+            <span>Copyright &copy; funkedelica @2023</span>
           </div>
         </div>
       </footer>
@@ -347,7 +341,10 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >Logout</a>
+                    <form action="{{route('logout')}}" method="post" id="logout-form" style="display: none;">
+                        @csrf
+                    </form>
         </div>
       </div>
     </div>

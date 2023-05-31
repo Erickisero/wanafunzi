@@ -26,17 +26,16 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('home.about');
 
-Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('home.services');
+Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('home.faq');
 
-Route::get('/products', [App\Http\Controllers\HomeController::class, 'products'])->name('home.products');
+Route::get('/food', [App\Http\Controllers\HomeController::class, 'food'])->name('home.food');
 
-Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('home.contact');
+Route::get('/gallary', [App\Http\Controllers\HomeController::class, 'gallary'])->name('home.gallary');
 
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('home.blog');
-Route::get('/testimonials', [App\Http\Controllers\HomeController::class, 'testimonials'])->name('home.testimonials');
-Route::get('/detail', [App\Http\Controllers\HomeController::class, 'detail'])->name('home.detail');
-Route::get('/feature', [App\Http\Controllers\HomeController::class, 'feature'])->name('home.feature');
-Route::get('/team', [App\Http\Controllers\HomeController::class, 'team'])->name('home.team');
+Route::get('/location', [App\Http\Controllers\HomeController::class, 'location'])->name('home.location');
+Route::get('/menu', [App\Http\Controllers\HomeController::class, 'menu'])->name('home.menu');
+Route::get('/order', [App\Http\Controllers\HomeController::class, 'order'])->name('home.order');
 
 
 
@@ -49,19 +48,10 @@ Route::get('/admin/index', [App\Http\Controllers\adminController::class, 'index'
 
 Route::post('/category', [App\Http\Controllers\categoryController::class, 'chooseCategory'])->name('category');
 
-//$crop->user()->name();
-//crop controllers
-Route::get('/category/crop/create', [App\Http\Controllers\cropController::class, 'create'])->name('crop.create');
-Route::get('/category/crop/index', [App\Http\Controllers\cropController::class, 'index'])->name('crop.index');
-Route::post('/category/crop/create', [App\Http\Controllers\cropController::class, 'store'])->name('crop.store');
-Route::get('/category/crop/{id}/edit', [App\Http\Controllers\cropController::class, 'edit'])->name('crop.edit');
-Route::put('/category/crop/{id}', [App\Http\Controllers\cropController::class, 'update'])->name('crop.update');
-Route::delete('/category/crop/{id}/delete', [App\Http\Controllers\cropController::class, 'destroy'])->name('crop.destroy');
-
-//animal controllers
-Route::get('/category/animal/create', [App\Http\Controllers\animalController::class, 'create'])->name('animal.create');
-Route::get('/category/animal/index', [App\Http\Controllers\animalController::class, 'index'])->name('animal.index');
-Route::post('/category/animal/create', [App\Http\Controllers\animalController::class, 'store'])->name('animal.store');
-Route::get('/category/animal/{id}/edit', [App\Http\Controllers\animalController::class, 'edit'])->name('animal.edit');
-Route::put('/category/animal/{id}', [App\Http\Controllers\animalController::class, 'update'])->name('animal.update');
-Route::delete('/category/animal/{id}/delete', [App\Http\Controllers\animalController::class, 'destroy'])->name('animal.destroy');
+//order controllers
+Route::get('/category/order/create', [App\Http\Controllers\orderController::class, 'create'])->name('order.create');
+Route::get('/category/order/index', [App\Http\Controllers\orderController::class, 'index'])->name('order.index');
+Route::post('/category/order/create', [App\Http\Controllers\orderController::class, 'store'])->name('order.store');
+Route::get('/category/order/{id}/edit', [App\Http\Controllers\orderController::class, 'edit'])->name('order.edit');
+Route::put('/category/order/{id}/update', [App\Http\Controllers\orderController::class, 'update'])->name('order.update');
+Route::delete('/category/order/{id}/delete', [App\Http\Controllers\orderController::class, 'destroy'])->name('order.destroy');

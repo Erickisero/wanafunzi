@@ -1,233 +1,164 @@
 <x-home-master>
 @section('content')
-<!-- Hero Start -->
-<div class="container-fluid bg-primary py-5 bg-hero mb-5">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-white mb-md-4">Blog Grid</h1>
-                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
-                    <a href="" class="btn btn-secondary py-md-3 px-md-5">Blog Grid</a>
-                </div>
-            </div>
-        </div>
+<!--Page header & Title-->
+<section id="page_header">
+<div class="page_title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+         <h2 class="title">Blog</h2>
+         <p>Food is a language we speak fluentlyt</p>
+      </div>
     </div>
-    <!-- Hero End -->
-<!-- Blog Start -->
-<div class="container py-5">
-        <div class="row g-5">
-            <!-- Blog list Start -->
-            <div class="col-lg-8">
-                <div class="row g-5">
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-1.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-2.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-3.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-1.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-2.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-3.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-2.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-3.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-1.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog-item position-relative overflow-hidden">
-                            <img class="img-fluid" src="{{asset('home_ui/img/blog-2.jpg')}}" alt="">
-                            <a class="blog-overlay" href="">
-                                <h4 class="text-white">Lorem elitr magna stet eirmod labore amet</h4>
-                                <span class="text-white fw-bold">Jan 01, 2050</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <nav aria-label="Page navigation">
-                          <ul class="pagination pagination-lg justify-content-center m-0">
-                            <li class="page-item disabled">
-                              <a class="page-link rounded-0" href="#" aria-label="Previous">
-                                <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
-                              </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link rounded-0" href="#" aria-label="Next">
-                                <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                              </a>
-                            </li>
-                          </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog list End -->
-            <!-- Sidebar Start -->
-            <div class="col-lg-4">
-                <!-- Search Form Start -->
-                <div class="mb-5">
-                    <div class="input-group">
-                        <input type="text" class="form-control p-3" placeholder="Keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-                <!-- Search Form End -->
+  </div>
+</div>  
+</section>
 
-                <!-- Category Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Categories</h2>
-                    <div class="d-flex flex-column justify-content-start bg-primary p-4">
-                        <a class="fs-5 fw-bold text-white mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Design</a>
-                        <a class="fs-5 fw-bold text-white mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
-                        <a class="fs-5 fw-bold text-white mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
-                        <a class="fs-5 fw-bold text-white mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Keyword Research</a>
-                        <a class="fs-5 fw-bold text-white" href="#"><i class="bi bi-arrow-right me-2"></i>Email Marketing</a>
-                    </div>
-                </div>
-                <!-- Category End -->
 
-                <!-- Recent Post Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Recent Post</h2>
-                    <div class="bg-primary p-4">
-                        <div class="d-flex overflow-hidden mb-3">
-                            <img class="img-fluid flex-shrink-0" src="{{asset('home_ui/img/blog-1.jpg')}}" style="width: 75px;" alt="">
-                            <a href="" class="d-flex align-items-center bg-white text-dark fs-5 fw-bold px-3 mb-0">Lorem ipsum dolor sit amet elit
-                            </a>
-                        </div>
-                        <div class="d-flex overflow-hidden mb-3">
-                            <img class="img-fluid flex-shrink-0" src="{{asset('home_ui/img/blog-2.jpg')}}" style="width: 75px;" alt="">
-                            <a href="" class="d-flex align-items-center bg-white text-dark fs-5 fw-bold px-3 mb-0">Lorem ipsum dolor sit amet elit
-                            </a>
-                        </div>
-                        <div class="d-flex overflow-hidden mb-3">
-                            <img class="img-fluid flex-shrink-0" src="{{asset('home_ui/img/blog-3.jpg')}}" style="width: 75px;" alt="">
-                            <a href="" class="d-flex align-items-center bg-white text-dark fs-5 fw-bold px-3 mb-0">Lorem ipsum dolor sit amet elit
-                            </a>
-                        </div>
-                        <div class="d-flex overflow-hidden mb-3">
-                            <img class="img-fluid flex-shrink-0" src="{{asset('home_ui/img/blog-1.jpg')}}" style="width: 75px;" alt="">
-                            <a href="" class="d-flex align-items-center bg-white text-dark fs-5 fw-bold px-3 mb-0">Lorem ipsum dolor sit amet elit
-                            </a>
-                        </div>
-                        <div class="d-flex overflow-hidden">
-                            <img class="img-fluid flex-shrink-0" src="{{asset('home_ui/img/blog-2.jpg')}}" style="width: 75px;" alt="">
-                            <a href="" class="d-flex align-items-center bg-white text-dark fs-5 fw-bold px-3 mb-0">Lorem ipsum dolor sit amet elit
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Recent Post End -->
 
-                <!-- Image Start -->
-                <div class="mb-5">
-                    <img src="{{asset('home_ui/img/blog-1.jpg')}}" alt="" class="img-fluid rounded">
-                </div>
-                <!-- Image End -->
 
-                <!-- Tags Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Tag Cloud</h2>
-                    <div class="d-flex flex-wrap m-n1">
-                        <a href="" class="btn btn-primary m-1">Design</a>
-                        <a href="" class="btn btn-primary m-1">Development</a>
-                        <a href="" class="btn btn-primary m-1">Marketing</a>
-                        <a href="" class="btn btn-primary m-1">SEO</a>
-                        <a href="" class="btn btn-primary m-1">Writing</a>
-                        <a href="" class="btn btn-primary m-1">Consulting</a>
-                        <a href="" class="btn btn-primary m-1">Design</a>
-                        <a href="" class="btn btn-primary m-1">Development</a>
-                        <a href="" class="btn btn-primary m-1">Marketing</a>
-                        <a href="" class="btn btn-primary m-1">SEO</a>
-                        <a href="" class="btn btn-primary m-1">Writing</a>
-                        <a href="" class="btn btn-primary m-1">Consulting</a>
-                    </div>
-                </div>
-                <!-- Tags End -->
-
-                <!-- Plain Text Start -->
-                <div>
-                    <h2 class="mb-4">Plain Text</h2>
-                    <div class="bg-primary text-center text-white" style="padding: 30px;">
-                        <p>Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam</p>
-                        <a href="" class="btn btn-secondary py-2 px-4">Read More</a>
-                    </div>
-                </div>
-                <!-- Plain Text End -->
-            </div>
-            <!-- Sidebar End -->
+<!-- Blogs -->
+<section id="blog" class="padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-7">
+        <div class="blog_item padding-bottom">
+           <h2>Celebration with Music</h2>
+           <ul class="comments">
+             <li><a href="#.">Apr 10, 2023</a></li>
+             <li><a href="#."><i class="icon-chat-2"></i>5</a></li>
+           </ul>
+          <div class="image_container">
+          <img src="https://www.themesindustry.com/html/bistro/images/blog1.jpg" class="img-responsive" alt="blog post">
+          </div>
+          <p>Music is an elite way of bring entertainement and peace of mind to customers as they enjoy their delicious meal.
+            This help in relaxasion of mind and body at any given time...</p>
+          <a class="btn-common button3" href="blog-detail.html">Read more</a>
         </div>
+        <div class="blog_item padding-bottom">
+           <h2>Corporate Dining </h2>
+           <ul class="comments">
+             <li><a href="#.">Apr 10, 2023</a></li>
+             <li><a href="#."><i class="icon-chat-2"></i>5</a></li>
+           </ul>
+          <div class="image_container">
+           <div id="blog-slider" class="owl-carousel">
+              <div class="item"><img src="https://www.themesindustry.com/html/bistro/images/blog2.jpg" class="img-responsive" alt="blog post"></div>
+              <div class="item"><img src="https://www.themesindustry.com/html/bistro/images/blog3.jpg" class="img-responsive" alt="blog post"></div>
+              <div class="item"><img src="https://www.themesindustry.com/html/bistro/images/blog4.jpg" class="img-responsive" alt="blog post"></div>
+            </div>
+          </div>
+          <p>Here at Funke, our hospitality provides for a great dining experience that goes far beyond great food and great service.
+             We strongly believe that a truly great dining experience is one where our guest’s needs are anticipated and met.
+              We always strive to make every dining moment memorable for our customers....</p>
+          <a class="btn-common button3" href="blog-detail.html">Read more</a>
+        </div>
+        <div class="blog_item padding-bottom">
+           <h2>Daily Exercide is Essential</h2>
+           <ul class="comments">
+             <li><a href="#.">Apr 10, 2023</a></li>
+             <li><a href="#."><i class="icon-chat-2"></i>5</a></li>
+           </ul>
+          <div class="image_container">
+          <img src="https://www.themesindustry.com/html/bistro/images/blog3.jpg" class="img-responsive" alt="blog post">
+          </div>
+          <p>We create delicious gourmet dishes, appetizers, and desserts that catered for our customers needs....</p>
+          <a class="btn-common button3" href="blog-detail.html">Read more</a>
+        </div>
+        <div class="blog_item padding-bottom">
+           <h2>Presentation is as important as taste</h2>
+           <ul class="comments">
+             <li><a href="#.">Apr 10, 2023</a></li>
+             <li><a href="#."><i class="icon-chat-2"></i>5</a></li>
+           </ul>
+          <div class="image_container">
+          <img src="https://www.themesindustry.com/html/bistro/images/blog4.jpg" class="img-responsive" alt="blog post">
+          </div>
+          <p>We believe that our customers deserve the best, and this ranges from the ambience our location
+             has to offer to our diverse food and so much more....</p>
+          <a class="btn-common button3" href="blog-detail.html">Read more</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-5">
+        <aside class="sidebar">
+           <div class="widget">
+            <ul class="tabs">
+              <li class="active" rel="tab1">Popular </li>
+              <li rel="tab2">Latest</li>
+              <li rel="tab3">Comments</li>
+            </ul>
+           <div class="tab_container bg_grey">
+          <h3 class="d_active tab_drawer_heading" rel="tab1">Popular</h3>
+          <div id="tab1" class="tab_content">
+            <div class="single_comments">
+              <img alt="" src="pimages/ck.jpg">
+              <p><a href="#.">Celebration with Music </a>
+              <span>May 05, 2023</span>
+              </p>
+              
+            </div>
+            <div class="clearfix"></div>
+            <div class="single_comments">
+              <img alt="" src="pimages/ck.jpg">
+              <p><a href="#.">Delicacies and thier types</a><span>Feb 20, 2023</span></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="single_comments no-margin">
+              <img alt="" src="pimages/ck.jpg">
+              <p><a href="#.">Foreign foods and their roots</a> <span>Mar 25, 2023</span></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <h3 class="tab_drawer_heading" rel="tab2">Latest</h3>
+          <div id="tab2" class="tab_content">
+            <div class="single_comments">
+              <img alt="" src="pimages/ck.jpg">
+              <p><a href="#.">African food love</a> <span>Jun 03, 2023</span></p>
+            </div>
+          </div>
+           <h3 class="tab_drawer_heading" rel="tab3">Comments</h3>
+          <div id="tab3" class="tab_content">
+            <div class="single_comments">
+                <img alt="" src="pimages/ck.jpg">
+                <p><a href="#.">Drinks and bevarages</a> <span>Apr 05, 2023</span></p>
+                
+             </div>
+             <div class="single_comments">
+              <img alt="" src="pimages/ck.jpg">
+              <p><a href="#.">Dinning</a> <span>May 05, 2023</span></p>
+              
+            </div>
+          </div> 
+        </div>
+           </div>
+           <div class="widget">
+             <h3>Categories</h3>
+             <ul class="widget_links">
+               <li><a href="#.">Food</a></li>
+               <li><a href="#.">Special Occasion</a></li>
+               <li><a href="#.">Presentation</a></li>
+               <li><a href="#.">Corporate Dining</a></li>
+               <li><a href="#.">Reservation</a></li>
+             </ul>
+           </div>
+           <div class="widget">
+             <h3>Tags</h3>
+             <ul class="tags">
+             <li><a href="#.">Our Events</a></li>
+             <li><a href="#.">Dinning</a></li>
+             <li><a href="#.">Lunch</a></li>
+             <li><a href="#.">Breakfast </a></li>
+             <li><a href="#.">Assistance</a></li>
+             <li><a href="#.">Reservation</a></li>
+             <li><a href="#.">Special Occasion</a></li>
+             <li><a href="#.">VIP</a></li>
+             </ul>
+           </div>
+        </aside>
     </div>
-    <!-- Blog End -->
+    </div>
+  </div>
+</section>
 
 
 @endsection
